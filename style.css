@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 48%; /* Adjusts the width of each item */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.title {
+    color: #444;
+    margin: 0 0 20px 0;
+}
+
+.video {
+    width: 100%;
+    height: 315px; /* Adjusted for better aspect ratio */
+    border: none;
+}
+
+@media screen and (max-width: 800px) {
+    .news-item {
+        width: 100%; /* Each item takes full width on smaller screens */
+    }
+}
